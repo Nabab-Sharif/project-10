@@ -1067,6 +1067,8 @@ ul {
     margin-left: 83px;
   }
 
+
+
 }
 
 
@@ -1177,6 +1179,95 @@ ul {
 
 @media (max-width:767px) {
 
+  #banner_part .banner_text h2 {
+    font-size: 17px;
+    width: auto;
+
+  }
+
+  #banner_part {
+    padding: 88px 0;
+  }
+
+  #love_part .love_text p {
+    width: auto;
+    font-size: 10px;
+  }
+
+  #love_part .loveCards {
+    flex-wrap: wrap;
+    row-gap: 30px;
+    margin-top: 20px;
+  }
+
+
+  #love_part .love_text p {
+    width: auto;
+    font-size: 10px;
+  }
+
+
+  #benefits_part .benefits_text h3 {
+    width: auto;
+  }
+
+
+  #benefits_part .benefits_cards .benefit_card1 {
+    width: 95%;
+  }
+
+
+  #benefits_part .benefits_cards .benefit_card2 {
+    width: 95%;
+  }
+
+
+  #benefits_part .benefits_cards .benefit_card3 {
+    width: 95%;
+  }
+
+
+  #benefits_part .benefits_cards .benefit_card4 {
+    width: 95%;
+  }
+
+
+  #joinUs_part .joinText h3 {
+    width: auto;
+  }
+
+
+  #visit_part .visit_content .visit_text h2 {
+    width: auto;
+  }
+
+
+  #visit_part .visit_content .visit_text p {
+    width: auto;
+  }
+
+
+
+  #blog_part .blog_cards .blog_card h3 {
+    font-size: 12px;
+    width: auto;
+
+  }
+
+
+  #blog_part .blog_cards .blog_card {
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+
+
+
+  #blog_part .blog_cards .blog_card p {
+
+    width: auto;
+  }
+
+
   #relevantCard_part .cards {
     justify-content: center;
     flex-wrap: wrap;
@@ -1245,6 +1336,13 @@ ul {
   #footer_part .footer_contents .subscribe .form .btn {
 
     right: 20%;
+
+  }
+
+
+  #footer_part .footer_contents .subscribe h2 {
+
+    width: auto;
 
   }
 
