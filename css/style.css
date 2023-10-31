@@ -751,3 +751,125 @@ ul {
 
 
 /*...............Visit Section End Here.................*/
+
+
+
+
+
+
+/*...............Blog Section Start Here.................*/
+
+#blog_part {
+  padding-bottom: 128px;
+}
+
+#blog_part .blog_text h6 {
+  color: #161722;
+  font-family: Roboto Condensed;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+#blog_part .blog_text h2 {
+  color: #161722;
+  text-align: center;
+  font-family: Roboto Condensed;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 64px;
+  letter-spacing: -0.48px;
+  text-transform: uppercase;
+  margin-top: 16px;
+  margin-bottom: 64px;
+}
+
+
+#blog_part .blog_cards {
+  display: flex;
+  column-gap: 20px;
+  flex-wrap: wrap;
+}
+
+
+
+#blog_part .blog_cards .blog_card {
+  padding: 48px 32px;
+  background: #FFF5EB;
+  border-bottom: 16px solid #FFF5EB;
+  flex: 0 0 300px;
+  max-width: 300px;
+
+}
+
+#blog_part .blog_cards .blog_card:hover {
+  border-bottom: 16px solid #FFD0A0;
+}
+
+#blog_part .blog_cards .activeCard {
+  border-bottom: 16px solid #FFD0A0;
+}
+
+
+#blog_part .blog_cards .blog_card h5 {
+  font-family: Roboto Condensed;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.96px;
+  text-transform: uppercase;
+}
+
+
+#blog_part .blog_cards .blog_card h3 {
+  color: #161722;
+  font-family: Roboto Condensed;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.24px;
+  text-transform: uppercase;
+  width: 218px;
+  margin: 16px 0;
+}
+
+#blog_part .blog_cards .blog_card p {
+  color: #161722;
+  font-family: Roboto Condensed;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  width: 238px;
+}
+
+
+#blog_part .blog_cards .blog_card h4 {
+  color: #161722;
+  font-family: Roboto Condensed;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 48px;
+  margin-bottom: 4px;
+}
+
+#blog_part .blog_cards .blog_card h6 {
+  color: #161722;
+  font-family: Roboto Condensed;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+
+
+/*...............Blog Section End Here.................*/
