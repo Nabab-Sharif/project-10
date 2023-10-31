@@ -333,6 +333,10 @@ ul {
   justify-content: center;
 }
 
+#love_part .loveCards .loveCard img {
+  width: 100%;
+}
+
 #love_part .btn {
   margin: 0 auto;
 }
@@ -792,7 +796,7 @@ ul {
 #blog_part .blog_cards {
   display: flex;
   column-gap: 20px;
-  flex-wrap: wrap;
+
 }
 
 
@@ -800,8 +804,6 @@ ul {
 #blog_part .blog_cards .blog_card {
   padding: 48px 32px;
   background: #FFF5EB;
-  border-bottom: 16px solid #FFF5EB;
-  flex: 0 0 300px;
   max-width: 300px;
   transition: all ease 0.8s;
 }
@@ -926,7 +928,6 @@ ul {
 
 #footer_part .footer_contents .menu h4 {
   color: #FFF;
-  text-align: right;
   font-family: Roboto Condensed;
   font-size: 16px;
   font-style: normal;
@@ -1038,3 +1039,216 @@ ul {
 
 
 /*...............Footer Section End Here.................*/
+
+
+
+
+
+
+/*...............Responsive Section Start Here.................*/
+
+
+@media (max-width:1199px) {
+  .header .nav .navitem {
+    flex: 0 0 79%;
+    max-width: 79%;
+  }
+
+  #relevantCard_part .cards {
+    justify-content: center;
+  }
+
+  #blog_part .blog_cards .blog_card {
+    max-width: 284px;
+  }
+
+
+  #footer_part .footer_contents .menu {
+    margin-left: 83px;
+  }
+
+}
+
+
+
+@media (max-width:991px) {
+  .header .nav .navitem {
+    flex: 0 0 76%;
+    max-width: 76%;
+  }
+
+  #relevantCard_part .cards .card {
+    padding: 87px 74px 71px 53px;
+
+  }
+
+  #relevantCard_part .cards .card p {
+    width: 209px;
+
+  }
+
+  #love_part .loveCards {
+    column-gap: 13px;
+  }
+
+  #benefits_part .benefits_cards {
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 24px;
+  }
+
+  #benefits_part .benefits_cards .benefit_card1 {
+    width: 40%;
+  }
+
+  #benefits_part .benefits_cards .benefit_card2 {
+    width: 40%;
+  }
+
+  #benefits_part .benefits_cards .benefit_card3 {
+    width: 40%;
+  }
+
+
+  #benefits_part .benefits_cards .benefit_card4 {
+    width: 40%;
+  }
+
+
+  #visit_part .visit_content {
+    width: 721px;
+  }
+
+  #blog_part .blog_cards {
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 24px;
+  }
+
+  #blog_part .blog_cards .blog_card {
+    max-width: 48%;
+    flex: 0 0 48%;
+  }
+
+
+  #footer_part .footer_contents {
+    flex-wrap: wrap;
+  }
+
+  #footer_part .footer_contents .menu {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+
+
+  #footer_part .footer_contents {
+    column-gap: 20px;
+    justify-content: space-around;
+    row-gap: 50px;
+  }
+
+  #footer_part .footer_contents .address {
+    flex: 0 0 45%;
+    width: 45%;
+  }
+
+  #footer_part .footer_contents .menu {
+    flex: 0 0 45%;
+    width: 45%;
+
+  }
+
+
+  #footer_part .footer_contents .contact {
+    flex: 0 0 30%;
+  }
+
+  #footer_part .footer_contents .subscribe {
+    flex: 0 0 50%;
+  }
+
+
+}
+
+
+
+
+
+@media (max-width:767px) {
+
+  #relevantCard_part .cards {
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 24px;
+  }
+
+
+  #relevantCard_part .cards .card {
+    flex: 0 0 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #joinUs_part .joinContents {
+    flex-wrap: wrap;
+    row-gap: 40px;
+    justify-content: center;
+  }
+
+  #footer_part .footer_contents {
+    flex-wrap: wrap;
+  }
+
+  #footer_part .footer_contents .menu {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+
+
+  #footer_part .footer_contents {
+    column-gap: 20px;
+    justify-content: space-around;
+    row-gap: 50px;
+  }
+
+  #footer_part .footer_contents .address {
+    flex: 0 0 100%;
+    width: 100%;
+  }
+
+  #footer_part .footer_contents .menu {
+    flex: 0 0 100%;
+    width: 100%;
+
+  }
+
+  #footer_part .footer_contents .contact {
+    flex: 0 0 100%;
+    margin-right: 0;
+  }
+
+  #footer_part .footer_contents .subscribe {
+    flex: 0 0 100%;
+  }
+
+
+  #footer_part .footer_contents .subscribe .input {
+
+    width: 80%;
+  }
+
+  #footer_part .footer_contents .subscribe .form .btn {
+
+    right: 20%;
+
+  }
+
+}
+
+
+/*...............Responsive Section End Here.................*/
