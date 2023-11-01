@@ -1176,7 +1176,7 @@ nav .btn {
 
   #love_part .loveCards .Card_2 {
     margin-top: 0;
-    width: 92%;
+    width: 78%;
   }
 
   #love_part .love_text p {
@@ -1196,6 +1196,8 @@ nav .btn {
   #love_part .love_text2 .love_text2_para {
     width: auto;
   }
+
+
 
 
   /*Benefits Card Section Here  */
@@ -1369,10 +1371,9 @@ nav .btn {
   #footer_part .footer_contents .menu {
     flex: 0 0 90%;
     width: 90%;
-    margin-left: 130px;
+    margin-left: 83px;
     margin-right: 82px;
   }
-
 
 
   #footer_part .footer_contents .contact {
