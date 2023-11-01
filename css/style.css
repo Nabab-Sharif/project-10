@@ -54,38 +54,32 @@ ul {
 
 
 
+
 /*...............Nav Section Start Here.................*/
-.header {
-  background: #0D0D0D;
-}
-
-.header .nav {
-  display: flex;
-  column-gap: 128px;
+nav {
+  background: black;
   padding: 12px 0;
+
+}
+
+nav ul {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
   align-items: center;
 }
 
-.header .nav .logo {
-  flex: 0 0 10%;
-  max-width: 10%;
+nav ul li {
+  height: 50px;
 }
 
-.header .nav .navitem {
+nav ul li a {
+  height: 100%;
+  padding: 0 30px;
   display: flex;
-  justify-content: space-between;
-  flex: 0 0 80%;
-  max-width: 80%;
-}
-
-.header .nav .items {
-  display: flex;
+  align-items: center;
   column-gap: 48px;
-  align-items: center;
-}
 
-
-.header .nav .items li a {
   color: #FFF;
   font-family: Roboto Condensed;
   font-size: 16px;
@@ -96,7 +90,69 @@ ul {
 }
 
 
+nav ul li a:hover {
+  color: #09af90;
+}
+
+
+nav li:first-child {
+  margin-right: auto;
+}
+
+nav .btn {
+  margin-left: 400px;
+
+}
+
+
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  background-color: black;
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  backdrop-filter: blur(10px);
+
+
+}
+
+.sidebar ul li {
+  width: 100%;
+}
+
+.sidebar ul li a {
+  width: 100%;
+}
+
+
+.menu-button {
+  display: none;
+}
+
+
+.menu-button a i {
+  font-size: 20px;
+}
+
+.hidebar a i {
+  font-size: 20px;
+}
+
+
+
+
+
+
 /*...............Nav Section End Here.................*/
+
 
 
 
@@ -1036,8 +1092,6 @@ ul {
 }
 
 
-
-
 /*...............Footer Section End Here.................*/
 
 
@@ -1047,37 +1101,697 @@ ul {
 
 /*...............Responsive Section Start Here.................*/
 
+@media (min-width: 320px) and (max-width: 575.98px) {
 
-@media (max-width:1199px) {
-  .header .nav .navitem {
-    flex: 0 0 79%;
-    max-width: 79%;
+  /* Nav Section Here */
+  .sidebar {
+    width: 100%;
   }
+
+
+  .hideOnMobile {
+    display: none;
+  }
+
+  .menu-button {
+    display: block;
+  }
+
+  nav .btn {
+    margin-left: 10px;
+    margin-top: 20px;
+  }
+
+
+
+  /* Banner Section Here */
+
+  #banner_part .banner_text h2 {
+    font-size: 17px;
+    width: auto;
+    margin-top: 7px;
+    margin-bottom: 2px;
+
+  }
+
+  #banner_part {
+    padding: 88px 0;
+  }
+
+
+  #banner_part .banner_text {
+    margin-left: 5px;
+  }
+
+
+  #banner_part .banner_text .btn {
+    padding: 22px 51px;
+    margin-bottom: 49px;
+  }
+
+
+  /* Relevant Card Section Here */
 
   #relevantCard_part .cards {
     justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 24px;
   }
 
+  #relevantCard_part .cards .card {
+    flex: 0 0 90%;
+    width: 90%;
+    padding: 57px 67px 51px 34px;
+  }
+
+
+
+  /* Love Section Here */
+  #love_part .loveCards {
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 26px;
+    row-gap: 20px;
+  }
+
+  #love_part .loveCards .Card_2 {
+    margin-top: 0;
+    width: 92%;
+  }
+
+  #love_part .love_text p {
+    width: auto;
+    font-size: 10px;
+    margin: 0 10px;
+    margin-bottom: 10px;
+  }
+
+  #love_part .love_text h4 {
+    font-size: 43px;
+    margin-top: 12px;
+    margin-bottom: 28px;
+  }
+
+
+  #love_part .love_text2 .love_text2_para {
+    width: auto;
+  }
+
+
+  /*Benefits Card Section Here  */
+  #benefits_part .benefits_cards {
+    flex-wrap: wrap;
+    row-gap: 30px;
+    justify-content: center;
+  }
+
+  #benefits_part .benefits_text h3 {
+    width: auto;
+    font-size: 31px;
+    line-height: 55px;
+  }
+
+
+  #benefits_part .benefits_cards .benefit_card1 {
+    width: 90%;
+  }
+
+
+  #benefits_part .benefits_cards .benefit_card2 {
+    width: 90%;
+  }
+
+
+  #benefits_part .benefits_cards .benefit_card3 {
+    width: 90%;
+  }
+
+
+  #benefits_part .benefits_cards .benefit_card4 {
+    width: 90%;
+  }
+
+
+
+  /* Join Us Section Here */
+  #joinUs_part {
+    padding: 91px 0;
+  }
+
+  #joinUs_part .joinContents {
+    flex-wrap: wrap;
+    row-gap: 30px;
+  }
+
+
+  #joinUs_part .joinContents .Event {
+    width: 302px;
+    padding: 32px 35px 37px 22px;
+    margin: 0 auto;
+  }
+
+  #joinUs_part .joinContents img {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  #joinUs_part .joinText h3 {
+    font-size: 33px;
+    width: auto;
+  }
+
+  #joinUs_part .view {
+    margin-right: 15px;
+  }
+
+  #joinUs_part .joinContents img {
+    width: 93%;
+
+  }
+
+
+
+  /* Visit Section Here */
+
+  #visit_part {
+    padding: 72px 0;
+    margin-bottom: 92px;
+  }
+
+  #visit_part .visit_content {
+    padding: 32px 41px;
+    width: 291px;
+    height: 301px;
+  }
+
+  #visit_part .visit_content .visit_text h2 {
+    font-size: 17px;
+    width: auto;
+    line-height: 21px;
+  }
+
+  #visit_part .visit_content .visit_text p {
+    font-size: 12px;
+    width: auto;
+    margin: 9px 0;
+  }
+
+  #visit_part .visit_content .visit_text .btn {
+    font-size: 13px;
+    padding: 18px 39px;
+  }
+
+
+  #visit_part .visit_content .icon {
+    font-size: 96px;
+
+  }
+
+
+
+
+  /* Blog Section Here */
+  #blog_part {
+    padding-bottom: 77px;
+  }
+
+  #blog_part .blog_text h2 {
+    font-size: 39px;
+    line-height: 57px;
+    margin-top: 16px;
+    margin-bottom: 48px;
+  }
+
+
+  #blog_part .blog_cards {
+    flex-wrap: wrap;
+    row-gap: 30px;
+    justify-content: center;
+  }
+
+
   #blog_part .blog_cards .blog_card {
-    max-width: 284px;
+    max-width: 90%;
+    flex: 0 0 90%;
+    text-align: center;
+  }
+
+
+  #blog_part .blog_cards .blog_card h3 {
+    font-size: 12px;
+    width: auto;
+  }
+
+
+  #blog_part .blog_cards .blog_card p {
+    width: auto;
+  }
+
+
+
+
+
+  /* Footer Section Here */
+  #footer_part .footer_contents {
+    flex-wrap: wrap;
+    column-gap: 20px;
+    justify-content: space-around;
+    row-gap: 50px;
+  }
+
+
+  #footer_part .footer_contents .address {
+    flex: 0 0 90%;
+    width: 90%;
   }
 
 
   #footer_part .footer_contents .menu {
-    margin-left: 83px;
+    flex: 0 0 90%;
+    width: 90%;
+    margin-left: 130px;
+    margin-right: 82px;
   }
 
+
+
+  #footer_part .footer_contents .contact {
+    flex: 0 0 90%;
+    margin-right: 0;
+  }
+
+
+  #footer_part .footer_contents .subscribe {
+    flex: 0 0 90%;
+  }
+
+
+  #footer_part .footer_contents .subscribe h2 {
+    width: auto;
+  }
+
+
+  #footer_part .footer_contents .subscribe .input {
+    width: 80%;
+    margin: 0 5px;
+    padding: 15px 0 19px 14px;
+    font-size: 11px;
+  }
+
+
+  #footer_part .footer_contents .subscribe .form .btn {
+    padding: 21px 36px;
+    font-size: 11px;
+    right: 8px;
+  }
 
 
 }
 
 
 
-@media (max-width:991px) {
-  .header .nav .navitem {
-    flex: 0 0 76%;
-    max-width: 76%;
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+
+  /* Nav Section Here */
+  .sidebar {
+    width: 100%;
   }
+
+
+  .hideOnMobile {
+    display: none;
+  }
+
+  .menu-button {
+    display: block;
+  }
+
+  nav .btn {
+    margin-left: 10px;
+    margin-top: 20px;
+  }
+
+
+  /* Banner Section Here */
+
+  #banner_part .banner_text h2 {
+    font-size: 17px;
+    width: auto;
+    margin-top: -16px;
+    margin-bottom: 4px;
+  }
+
+
+  #banner_part {
+    padding: 88px 0;
+  }
+
+
+  #banner_part .banner_text {
+    margin-left: 5px;
+  }
+
+
+  #banner_part .banner_text .btn {
+    padding: 22px 51px;
+    margin-bottom: 49px;
+  }
+
+
+  /* Relevant Card Section Here */
+  #relevantCard_part {
+    padding: 66px 0;
+  }
+
+  #relevantCard_part .relevantText h5 {
+    font-size: 39px;
+    line-height: 58px;
+    margin-top: 10px;
+    margin-bottom: 34px;
+  }
+
+  #relevantCard_part .cards {
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 24px;
+  }
+
+  #relevantCard_part .cards .card {
+    flex: 0 0 90%;
+    width: 90%;
+    padding: 57px 67px 51px 34px;
+  }
+
+
+
+  /* Love Section Here */
+  #love_part {
+    padding-bottom: 68px;
+  }
+
+  #love_part .love_text h4 {
+    margin-top: 12px;
+    margin-bottom: 13px;
+    font-size: 43px;
+  }
+
+  #love_part .love_text p {
+    width: auto;
+    font-size: 12px;
+    margin: 0 10px;
+    margin-bottom: 10px;
+  }
+
+  #love_part .loveCards {
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 26px;
+    row-gap: 20px;
+  }
+
+  #love_part .loveCards .Card_2 {
+    margin-top: 0;
+    width: 51%;
+  }
+
+
+  #love_part .love_text2 .love_text2_para {
+    width: auto;
+  }
+
+
+  /*Benefits Card Section Here  */
+  #benefits_part {
+    padding: 48px 0;
+  }
+
+  #benefits_part .benefits_cards {
+    flex-wrap: wrap;
+    row-gap: 30px;
+    justify-content: center;
+  }
+
+  #benefits_part .benefits_text h3 {
+    width: auto;
+    font-size: 31px;
+    line-height: 55px;
+  }
+
+
+  #benefits_part .benefits_cards .benefit_card1 {
+    width: 90%;
+  }
+
+
+  #benefits_part .benefits_cards .benefit_card2 {
+    width: 90%;
+  }
+
+
+  #benefits_part .benefits_cards .benefit_card3 {
+    width: 90%;
+  }
+
+
+  #benefits_part .benefits_cards .benefit_card4 {
+    width: 90%;
+  }
+
+
+
+  /* Join Us Section Here */
+  #joinUs_part {
+    padding: 91px 0;
+  }
+
+  #joinUs_part .joinText h3 {
+    font-size: 34px;
+    width: auto;
+    line-height: 54px;
+  }
+
+
+  #joinUs_part .joinContents {
+    flex-wrap: wrap;
+    row-gap: 30px;
+  }
+
+  #joinUs_part .joinContents .Event {
+    width: 533px;
+    padding: 32px 35px 37px 22px;
+    margin: 0 auto;
+  }
+
+  #joinUs_part .joinContents img {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+
+  #joinUs_part .view {
+    margin-right: 15px;
+  }
+
+  #joinUs_part .joinContents img {
+    width: 93%;
+
+  }
+
+
+
+  /* Visit Section Here */
+
+  #visit_part {
+    padding: 72px 0;
+    margin-bottom: 92px;
+  }
+
+  #visit_part .visit_content {
+    padding: 56px 67px;
+    width: 456px;
+    height: 295px;
+  }
+
+
+  #visit_part .visit_content .visit_text h2 {
+    font-size: 17px;
+    width: auto;
+    line-height: 21px;
+  }
+
+  #visit_part .visit_content .visit_text p {
+    font-size: 12px;
+    width: auto;
+    margin: 9px 0;
+  }
+
+  #visit_part .visit_content .visit_text .btn {
+    font-size: 13px;
+    padding: 18px 39px;
+  }
+
+
+  #visit_part .visit_content .icon {
+    font-size: 96px;
+
+  }
+
+
+
+
+  /* Blog Section Here */
+  #blog_part {
+    padding-bottom: 77px;
+  }
+
+  #blog_part .blog_text h2 {
+    font-size: 39px;
+    line-height: 57px;
+    margin-top: 16px;
+    margin-bottom: 48px;
+  }
+
+
+  #blog_part .blog_cards {
+    flex-wrap: wrap;
+    row-gap: 30px;
+    justify-content: center;
+  }
+
+
+  #blog_part .blog_cards .blog_card {
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: center;
+  }
+
+
+  #blog_part .blog_cards .blog_card h3 {
+    font-size: 12px;
+    width: auto;
+  }
+
+
+  #blog_part .blog_cards .blog_card p {
+    width: auto;
+  }
+
+
+
+
+
+  /* Footer Section Here */
+  #footer_part .footer_contents {
+    flex-wrap: wrap;
+    column-gap: 20px;
+    justify-content: space-around;
+    row-gap: 50px;
+  }
+
+
+  #footer_part .footer_contents .address {
+    flex: 0 0 90%;
+    width: 90%;
+  }
+
+
+  #footer_part .footer_contents .menu {
+    flex: 0 0 90%;
+    width: 90%;
+    margin-left: 130px;
+    margin-right: 82px;
+  }
+
+
+
+  #footer_part .footer_contents .contact {
+    flex: 0 0 90%;
+    margin-right: 0;
+  }
+
+
+  #footer_part .footer_contents .subscribe {
+    flex: 0 0 90%;
+  }
+
+
+  #footer_part .footer_contents .subscribe h2 {
+    width: auto;
+  }
+
+
+  #footer_part .footer_contents .subscribe .input {
+    width: 80%;
+    margin: 0 5px;
+    padding: 15px 0 19px 14px;
+    font-size: 11px;
+  }
+
+
+  #footer_part .footer_contents .subscribe .form .btn {
+    padding: 22px 36px;
+    font-size: 11px;
+    right: 8px;
+  }
+
+
+}
+
+
+
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+
+  /* Nav Section Here */
+  .hideOnMobile {
+    display: none;
+  }
+
+  .menu-button {
+    display: block;
+  }
+
+  nav .btn {
+    margin-left: 10px;
+    margin-top: 20px;
+  }
+
+
+  /* Banner Section Here */
+  .banner_text {
+    margin-left: 6px;
+  }
+
+  #banner_part .banner_text h2 {
+    font-size: 27px;
+    line-height: 72px;
+    width: auto;
+    margin-top: 8px;
+    margin-bottom: 22px;
+  }
+
+
+
+  /* Relevant Card Section Here */
+  #relevantCard_part {
+    padding: 65px 0;
+  }
+
+  #relevantCard_part .cards {
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 30px;
+  }
+
+  #relevantCard_part .cards .card {
+    padding: 87px 74px 71px 53px;
+    flex: 0 0 70%;
+  }
+
+
 
   #relevantCard_part .cards .card {
     padding: 87px 74px 71px 53px;
@@ -1089,8 +1803,89 @@ ul {
 
   }
 
+
+
+  /* Love Section Here */
+  #love_part {
+    padding-bottom: 55px;
+  }
+
   #love_part .loveCards {
     column-gap: 13px;
+  }
+
+
+  #love_part .love_text p {
+    width: auto;
+    font-size: 13px;
+    margin: 0 13px;
+    margin-bottom: 35px;
+  }
+
+  #love_part .loveCards {
+    flex-wrap: wrap;
+    row-gap: 30px;
+    margin-top: 20px;
+  }
+
+
+  #love_part .loveCards .Card_2 {
+    margin-top: 0px;
+  }
+
+
+  #love_part .loveCard {
+    flex: 0 0 30%;
+  }
+
+  #love_part .love_text h4 {
+    font-size: 44px;
+    margin-top: 14px;
+    margin-bottom: 14px;
+  }
+
+  #love_part .love_text2 .love_text2_para {
+    width: auto;
+  }
+
+
+
+  /* Join Us Section Here */
+  #joinUs_part {
+    padding: 70px 0;
+  }
+
+  #joinUs_part .joinContents {
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 30px;
+  }
+
+  #joinUs_part .joinContents .Event {
+    width: 650px;
+    padding: 53px 55px 61px 89px;
+  }
+
+
+  #joinUs_part .joinContents .image {
+    flex: 0 0 85%;
+  }
+
+  #joinUs_part .view {
+    font-size: 22px;
+    margin-right: 56px;
+  }
+
+  /* Benefits Section Here */
+  #benefits_part {
+    padding: 60px 0;
+  }
+
+  #benefits_part .benefits_text h3 {
+    width: auto;
+    font-size: 35px;
+    margin-top: 17px;
+    margin-bottom: 51px;
   }
 
   #benefits_part .benefits_cards {
@@ -1117,8 +1912,26 @@ ul {
   }
 
 
+
+
+  /* Visit Section Here */
   #visit_part .visit_content {
     width: 721px;
+  }
+
+  #visit_part {
+    padding: 107px 0;
+  }
+
+  #visit_part .visit_content {
+    width: 643px;
+  }
+
+
+
+  /* Blog Section Here */
+  #blog_part {
+    padding-bottom: 70px;
   }
 
   #blog_part .blog_cards {
@@ -1128,18 +1941,23 @@ ul {
   }
 
   #blog_part .blog_cards .blog_card {
-    max-width: 48%;
-    flex: 0 0 48%;
+    max-width: 44%;
+    flex: 0 0 44%;
   }
 
 
+  #blog_part .blog_cards .blog_card:hover {
+    border-bottom: 0;
+  }
+
+  #blog_part .blog_cards .activeCard {
+    border-bottom: 0;
+
+  }
+
+  /* Footer Section Here */
   #footer_part .footer_contents {
     flex-wrap: wrap;
-  }
-
-  #footer_part .footer_contents .menu {
-    margin-left: 0px;
-    margin-right: 0px;
   }
 
 
@@ -1151,23 +1969,38 @@ ul {
   }
 
   #footer_part .footer_contents .address {
-    flex: 0 0 45%;
-    width: 45%;
+    flex: 0 0 90%;
+    width: 90%;
   }
 
   #footer_part .footer_contents .menu {
-    flex: 0 0 45%;
-    width: 45%;
-
+    flex: 0 0 90%;
+    width: 90%;
+    margin-left: 50px;
+    margin-right: 87px;
   }
 
-
   #footer_part .footer_contents .contact {
-    flex: 0 0 30%;
+    flex: 0 0 90%;
+    margin-right: 0px;
   }
 
   #footer_part .footer_contents .subscribe {
-    flex: 0 0 50%;
+    flex: 0 0 90%;
+  }
+
+  #footer_part .footer_contents .subscribe .input {
+    width: 80%;
+    margin: 0 5px;
+    padding: 15px 0 19px 14px;
+    font-size: 11px;
+  }
+
+
+  #footer_part .footer_contents .subscribe .form .btn {
+    padding: 21px 36px;
+    font-size: 11px;
+    right: 19%;
   }
 
 
@@ -1176,177 +2009,181 @@ ul {
 
 
 
+@media (min-width: 992px) and (max-width:1199px) {
 
-@media (max-width:767px) {
-
-  #banner_part .banner_text h2 {
-    font-size: 17px;
-    width: auto;
-
+  /* Nav Section Here */
+  nav .btn {
+    margin-left: 227px;
   }
 
-  #banner_part {
-    padding: 88px 0;
-  }
-
-  #love_part .love_text p {
-    width: auto;
-    font-size: 10px;
-  }
-
-  #love_part .loveCards {
-    flex-wrap: wrap;
-    row-gap: 30px;
-    margin-top: 20px;
-  }
-
-
-  #love_part .love_text p {
-    width: auto;
+  nav .btn {
+    margin-left: 157px;
+    padding: 19px 41px;
+    margin-right: 30px;
     font-size: 10px;
   }
 
 
-  #benefits_part .benefits_text h3 {
+  /* Bannner Section Here */
+  .banner_text {
+    margin-left: 10px;
+  }
+
+
+
+  /* Relevant Card Section Here */
+  #relevantCard_part .cards {
+    justify-content: center;
+  }
+
+  #relevantCard_part .cards .card {
+    padding: 75px 75px 75px 59px;
+  }
+
+
+  #relevantCard_part .cards .card p {
+    width: auto;
+    font-size: 12px;
+  }
+
+  #relevantCard_part .cards .card h3 {
+    font-size: 28px;
+  }
+
+
+
+
+
+  /* Love Section Here */
+
+  #love_part .love_text h4 {
+    margin-top: 12px;
+    margin-bottom: 17px;
+  }
+
+
+  #love_part .love_text p {
+    width: auto;
+    font-size: 16px;
+    margin: 0 10px;
+    margin-bottom: 20px;
+  }
+
+
+  #love_part .loveCard {
+    width: 30%;
+  }
+
+
+  #love_part .love_text2 .love_text2_para {
     width: auto;
   }
 
+
+  /* Benefits Section Here */
+  #benefits_part .benefits_cards {
+    justify-content: center;
+  }
 
   #benefits_part .benefits_cards .benefit_card1 {
-    width: 95%;
+    width: 22%;
   }
 
 
   #benefits_part .benefits_cards .benefit_card2 {
-    width: 95%;
+    width: 22%;
   }
 
 
   #benefits_part .benefits_cards .benefit_card3 {
-    width: 95%;
+    width: 22%;
   }
 
 
   #benefits_part .benefits_cards .benefit_card4 {
-    width: 95%;
+    width: 22%;
   }
 
 
-  #joinUs_part .joinText h3 {
-    width: auto;
-  }
-
-
-  #visit_part .visit_content .visit_text h2 {
-    width: auto;
-  }
-
-
-  #visit_part .visit_content .visit_text p {
+  #benefits_part .benefits_cards p {
+    font-size: 13px;
     width: auto;
   }
 
 
 
-  #blog_part .blog_cards .blog_card h3 {
-    font-size: 12px;
-    width: auto;
+  /* Join Us Section Here */
+  #joinUs_part .joinContents .Event {
+    width: 414px;
+    padding: 32px 32px 50px 25px;
+  }
 
+
+  #joinUs_part .joinContents {
+    width: 96%;
+    margin: 0 auto;
+  }
+
+
+  #joinUs_part .view {
+    margin-right: 18px;
+  }
+
+
+
+
+  /* Blog Section Here */
+
+  #blog_part .blog_cards {
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 20px;
+  }
+
+
+  #blog_part .blog_cards .blog_card:hover {
+    border-bottom: 0;
+  }
+
+  #blog_part .blog_cards .activeCard {
+    border-bottom: 0;
   }
 
 
   #blog_part .blog_cards .blog_card {
-    max-width: 100%;
-    flex: 0 0 100%;
+    padding: 31px 32px;
+    flex: 0 0 47%;
+    max-width: 47%;
   }
 
 
 
-  #blog_part .blog_cards .blog_card p {
-
-    width: auto;
-  }
-
-
-  #relevantCard_part .cards {
-    justify-content: center;
-    flex-wrap: wrap;
-    row-gap: 24px;
-  }
-
-
-  #relevantCard_part .cards .card {
-    flex: 0 0 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  #joinUs_part .joinContents {
-    flex-wrap: wrap;
-    row-gap: 40px;
-    justify-content: center;
-  }
-
-  #footer_part .footer_contents {
-    flex-wrap: wrap;
-  }
+  /* Footer Section Here */
 
   #footer_part .footer_contents .menu {
-    margin-left: 0px;
-    margin-right: 0px;
-  }
-
-
-
-  #footer_part .footer_contents {
-    column-gap: 20px;
-    justify-content: space-around;
-    row-gap: 50px;
-  }
-
-  #footer_part .footer_contents .address {
-    flex: 0 0 100%;
-    width: 100%;
-  }
-
-  #footer_part .footer_contents .menu {
-    flex: 0 0 100%;
-    width: 100%;
-
+    margin-left: 33px;
   }
 
   #footer_part .footer_contents .contact {
-    flex: 0 0 100%;
-    margin-right: 0;
+    margin-right: 26px;
   }
-
-  #footer_part .footer_contents .subscribe {
-    flex: 0 0 100%;
-  }
-
 
   #footer_part .footer_contents .subscribe .input {
-
-    width: 80%;
+    width: 97%;
+    margin: 0 5px;
+    padding: 15px 0 19px 14px;
+    font-size: 11px;
   }
 
   #footer_part .footer_contents .subscribe .form .btn {
-
-    right: 20%;
-
+    padding: 21px 36px;
+    font-size: 11px;
+    right: 0;
   }
 
-
-  #footer_part .footer_contents .subscribe h2 {
-
-    width: auto;
-
-  }
 
 }
+
 
 
 /*...............Responsive Section End Here.................*/

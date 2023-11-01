@@ -20,36 +20,38 @@
 <body>
 
   <!-- ................................nav section start here........................... -->
-  <header class="header">
-
+  <nav>
     <div class="container">
-      <div class="nav">
-
-        <div class="logo">
-          <img src="images/logo.png" alt="logo.png">
-        </div>
 
 
-        <div class="nav-toggler">
-          <span></span>
-        </div>
+      <ul class="sidebar">
+        <li class="hidebar" onclick=hideSidebar()><a href="#"><i class="fa-solid fa-xmark"></i></a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Sermon</a></li>
+        <li><a href="#">Forum</a></li>
+        <li><a href="#">Blog</a></li>
+        <button class="btn"><a href="#">Contact us</a></button>
+      </ul>
 
-        <div class="navitem">
-          <ul class="items">
-            <li> <a href="#">Home</a></li>
-            <li> <a href="#">About us</a></li>
-            <li> <a href="#">Sermon</a></li>
-            <li> <a href="#">Blog</a></li>
-          </ul>
 
-          <button class="btn">Contact us</button>
-        </div>
+      <ul class="items">
 
-      </div>
+        <li><a href="#">
+            <img src="./images/logo.png" alt="">
+          </a></li>
+        <li class="hideOnMobile"><a href="#">Home</a></li>
+        <li class="hideOnMobile"><a href="#">About us</a></li>
+        <li class="hideOnMobile"><a href="#">Sermon</a></li>
+        <li class="hideOnMobile"><a href="#">Blog</a></li>
+
+        <li class="menu-button" onclick=showSidebar()><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+
+        <button class=" btn hideOnMobile"><a href="#">Contact us</a></button>
+      </ul>
     </div>
 
-  </header>
-
+  </nav>
 
   <!-- ................................nav section end here........................... -->
 
