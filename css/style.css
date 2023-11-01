@@ -1338,6 +1338,14 @@ nav .btn {
     text-align: center;
   }
 
+  #blog_part .blog_cards .activeCard {
+    border-bottom: 0;
+  }
+
+  #blog_part .blog_cards .blog_card:hover {
+    border-bottom: 0;
+  }
+
 
   #blog_part .blog_cards .blog_card h3 {
     font-size: 12px;
@@ -1666,6 +1674,14 @@ nav .btn {
     flex: 0 0 100%;
     max-width: 100%;
     text-align: center;
+  }
+
+  #blog_part .blog_cards .activeCard {
+    border-bottom: 0;
+  }
+
+  #blog_part .blog_cards .blog_card:hover {
+    border-bottom: 0;
   }
 
 
